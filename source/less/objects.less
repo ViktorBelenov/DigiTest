@@ -1,0 +1,38 @@
+/* color */
+@primary: #7397f5;
+@second-primary: #73AFF4;
+@white: #FFFFFF;
+@grey: #D5D5D5;
+@black:  #000000;
+/* value */
+@tablets-width: 1440px;
+@desktop-width: 1920px;
+/* font-family */
+@font:  "Open Sans","Arial",sans-serif;
+/*mixin*/
+.wrapper () {
+  margin: 0 auto;
+  width: 91.5%;
+
+  @media (min-width: @tablets-width) {
+    width: 86.2%;
+  }
+}
+.text () {
+  font-family: @font;
+  font-style: normal;
+}
+
+/*visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

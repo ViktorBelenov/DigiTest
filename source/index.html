@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тест</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  </head>
+  <body  class="html__body">
+    <header class="header">
+      <form class="header__wrapper">
+        <nav class="header__main-nav main-nav">
+          <a class="main-nav__logo">
+            <svg height="24" width="24" class="main-nav__navigation-item-link-arrow">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+            <span class="main-nav__logo-text">Логотип</span>
+          </a>
+
+          <a class="main-nav__link main-link">
+            Каталог
+          </a>
+        </nav>
+
+        <button class="header__button-back" type="button">
+          <svg height="20" width="20" class="header__navigation-item-link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+
+        <input class="header__search placeholder" type="text" placeholder="Поиск по 100 000 товаров ">
+
+        <nav class="header__second-nav second-nav">
+          <a class="second-nav__link">Информация о компании</a>
+          <a class="second-nav__link">Контакты</a>
+          <a class="second-nav__link">Полезные ссылки</a>
+        </nav>
+
+        <button class="header__button-close">
+          <svg height="20" width="20" class="header__navigation-item-link-arrow">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <button class="header__submite" type="submite">
+          Найти
+        </button>
+      </form>
+    </header>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
