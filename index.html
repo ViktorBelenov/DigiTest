@@ -8,7 +8,7 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   </head>
   <body  class="html__body">
-    <header class="header">
+    <header class="header html__header">
       <form class="header__wrapper">
         <nav class="header__main-nav main-nav">
           <a class="main-nav__logo">
@@ -28,9 +28,9 @@
             <use xlink:href="img/sprite.svg#arrow"></use>
           </svg>
         </button>
-
+        <div class="header__search-container">
         <input class="header__search placeholder" type="text" placeholder="Поиск по 100 000 товаров ">
-
+        </div>
         <nav class="header__second-nav second-nav">
           <a class="second-nav__link">Информация о компании</a>
           <a class="second-nav__link">Контакты</a>
@@ -48,6 +48,120 @@
         </button>
       </form>
     </header>
+
+    <main class="html__main">
+      <h1 class="visually-hidden">Магазин товаров</h1>
+      <div class="filter-product-container">
+        <nav class="filter">
+          <form>
+          <ul class="category">
+            <li class="category__item">
+              <p class="category__item-container">
+                <a class="category__link" href="#">Название категории</a>
+                <span class="category__category-item-counter">3</span>
+              </p>
+              <ul class="category__subcategory">
+                <li class="category__subcategory-item"><a class="category__link" href="#">Название категории</a>
+                  <span class="category__subcategory-item-counter">3</span>
+                </li>
+                <li class="category__subcategory-item"><a class="category__link" href="#">Название категории</a>
+                  <span class="category__subcategory-item-counter">3</span>
+                </li>
+                <li class="category__subcategory-item"><a class="category__link" href="#">Название категории</a>
+                  <span class="category__subcategory-item-counter">3</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <fieldset class="price">
+            <legend class="price__title">Цена</legend>
+            <div class="price__container">
+              <input class="price__input" type="text">
+              <div class="price__separator"></div>
+              <input class="price__input" type="text">
+            </div>
+          </fieldset>
+          </form>
+        </nav>
+
+        <section class="product">
+          <div class="product__wrapper">
+            <h2 class="product__title">Название категории</h2>
+            <ul class="product__card-container">
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+    </main>
 
     <script src="js/main.js"></script>
   </body>
