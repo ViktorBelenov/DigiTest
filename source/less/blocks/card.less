@@ -1,0 +1,72 @@
+.card {
+  position: relative;
+
+  &--hot::after {
+    content: "Хит продаж";
+    background-image: url("/img/hot.svg");
+    background-repeat: no-repeat;
+    background-position: 95px 8px;
+    background-color: @white;
+
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 8px;
+    padding-right: 30px;
+  }
+
+  &--sale::before {
+    content: "25%";
+    padding: 6px 10px;
+    background: @primary;
+    border-radius: 4px;
+
+    position: absolute;
+
+    color: @white;
+
+    top: 160px;
+    left: 12px;
+  }
+}
+
+
+.card__picture {
+  background-color: @grey-background;
+  object-fit: scale-down;
+  margin-bottom: 12px;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 8px;
+
+  color: #aaaaaa;
+}
+
+.card__description {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.card__price-container {
+  margin-bottom: 12px;
+}
+
+.card__buy-button {
+  color: @primary;
+  padding: 12px 16px;
+  border: 1px solid @primary;
+  border-radius: 4px;
+
+  display: inline-block;
+}
+
+.card__price {
+  &--old {
+    text-decoration: line-through;
+  }
+}
