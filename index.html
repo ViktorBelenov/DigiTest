@@ -53,8 +53,8 @@
       <h1 class="visually-hidden">Магазин товаров</h1>
       <div class="filter-product-container">
         <nav class="filter">
-          <form>
-          <ul class="category">
+          <form class="filter__form">
+          <ul class="category filter__category">
             <li class="category__item">
               <p class="category__item-container">
                 <a class="category__link" href="#">Название категории</a>
@@ -74,13 +74,33 @@
             </li>
           </ul>
 
-          <fieldset class="price">
+          <fieldset class="price filter__price">
             <legend class="price__title">Цена</legend>
             <div class="price__container">
               <input class="price__input" type="text">
               <div class="price__separator"></div>
               <input class="price__input" type="text">
             </div>
+          </fieldset>
+
+          <fieldset class="brand filter__brand">
+            <div class="brand__title-clear-container">
+              <h3 class="brand__title">Бренд</h3>
+              <button class="brand__button" type="button">Очистить</button>
+            </div>
+            <input class="brand__search" type="text" placeholder="Поиск">
+            <ul class="brand__checkbox-list">
+              <li class="brand__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden" checked>
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+            </ul>
           </fieldset>
           </form>
         </nav>
