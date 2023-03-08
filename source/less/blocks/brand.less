@@ -1,0 +1,57 @@
+.brand {
+  border: 0;
+  padding: 0;
+}
+
+.brand__title-clear-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  margin-bottom: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 10px;
+    background-image: url("../img/vector.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.brand__search {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 10px;
+  padding-left: 30px;
+  border: 1px solid @grey;
+  border-radius: 4px;
+
+  margin-bottom: 16px;
+}
+
+.brand__button {
+  border: 0;
+  padding: 0;
+  background-color: inherit;
+  text-decoration: underline;
+
+  vertical-align: start;
+
+  color: #aaaaaa;
+}
+
+.brand__title {
+  margin: 0;
+}
+
+.brand__checkbox-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
