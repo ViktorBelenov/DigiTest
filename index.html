@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Тест</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   </head>
   <body  class="html__body">
     <header class="header html__header">
@@ -56,19 +55,21 @@
           <form class="filter__form">
           <ul class="category filter__category">
             <li class="category__item">
-              <p class="category__item-container">
-                <a class="category__link" href="#">Название категории</a>
+                <a class="category__link" href="#">Название категории
                 <span class="category__category-item-counter">3</span>
-              </p>
+              </a>
               <ul class="category__subcategory">
-                <li class="category__subcategory-item"><a class="category__link" href="#">Название категории</a>
+                <li class="category__subcategory-item"><a class="category__link category__link--second" href="#">Название категории
                   <span class="category__subcategory-item-counter">3</span>
+                </a>
                 </li>
-                <li class="category__subcategory-item"><a class="category__link" href="#">Название категории</a>
+                <li class="category__subcategory-item"><a class="category__link category__link--second" href="#">Название категории
                   <span class="category__subcategory-item-counter">3</span>
+                </a>
                 </li>
-                <li class="category__subcategory-item"><a class="category__link" href="#">Название категории</a>
+                <li class="category__subcategory-item"><a class="category__link category__link--second" href="#">Название категории
                   <span class="category__subcategory-item-counter">3</span>
+                </a>
                 </li>
               </ul>
             </li>
@@ -100,6 +101,112 @@
                 <span class="checkbox-container__counter">3</span>
                 </div>
               </li>
+              <li class="brand__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="brand__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="brand__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="brand__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="brand__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="size filter__size">
+            <h3 class="size__title">Размер</h3>
+            <ul class="size__checkbox-list">
+              <li class="size__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="size__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="size__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="size__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
+              <li class="size__checkbox">
+                <div class="checkbox-container">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input visually-hidden">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__description">Атрибут</span>
+                  </label>
+                <span class="checkbox-container__counter">3</span>
+                </div>
+              </li>
             </ul>
           </fieldset>
           </form>
@@ -112,7 +219,8 @@
               <li class="product__card card card--hot card--sale">
                 <img class="card__picture" src="img/product-card.svg" height="200" width="165">
                 <h3 class="card__title">Бренд</h3>
-                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
                 <div class="card__price-container">
                   <span class="card__price">
                     5 990 ₽
@@ -129,7 +237,26 @@
               <li class="product__card card card--hot card--sale">
                 <img class="card__picture" src="img/product-card.svg" height="200" width="165">
                 <h3 class="card__title">Бренд</h3>
-                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button card__buy-button--disabled">
+                  Сообщить о наличие
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
                 <div class="card__price-container">
                   <span class="card__price">
                     5 990 ₽
@@ -146,7 +273,8 @@
               <li class="product__card card card--hot card--sale">
                 <img class="card__picture" src="img/product-card.svg" height="200" width="165">
                 <h3 class="card__title">Бренд</h3>
-                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
                 <div class="card__price-container">
                   <span class="card__price">
                     5 990 ₽
@@ -163,7 +291,8 @@
               <li class="product__card card card--hot card--sale">
                 <img class="card__picture" src="img/product-card.svg" height="200" width="165">
                 <h3 class="card__title">Бренд</h3>
-                <p class="card__description">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
                 <div class="card__price-container">
                   <span class="card__price">
                     5 990 ₽
@@ -176,6 +305,133 @@
                   Купить
                 </a>
               </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
+              <li class="product__card card card--hot card--sale">
+                <img class="card__picture" src="img/product-card.svg" height="200" width="165">
+                <h3 class="card__title">Бренд</h3>
+                <p class="card__description">
+                  <a class="card__description-link">Полное название товара в несколько строк для вида с обрывом в конце...</a></p>
+                <div class="card__price-container">
+                  <span class="card__price">
+                    5 990 ₽
+                  </span>
+                  <span class="card__price--old">
+                    5 990 ₽
+                  </span>
+                </div>
+                <a class="card__buy-button">
+                  Купить
+                </a>
+              </li>
+
             </ul>
           </div>
         </section>
