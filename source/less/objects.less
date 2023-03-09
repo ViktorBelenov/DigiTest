@@ -9,7 +9,8 @@
 @tablets-width: 1440px;
 @desktop-width: 1920px;
 /* font-family */
-@font:  "Open Sans","Arial",sans-serif;
+@font:  "PT Sans","Arial",sans-serif;
+@font-second: "Inter","Arial",sans-serif;
 /*mixin*/
 .wrapper () {
   margin: 0 auto;
@@ -18,12 +19,11 @@
   @media (min-width: @tablets-width) {
     width: 86.2%;
   }
-}
-.text () {
-  font-family: @font;
-  font-style: normal;
-}
 
+  @media (min-width: @desktop-width) {
+    width: 89.56%;
+  }
+}
 /*visually-hidden */
 .visually-hidden {
   position: absolute;

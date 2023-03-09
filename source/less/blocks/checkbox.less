@@ -12,6 +12,14 @@
   margin-right: 12px;
 }
 
+.checkbox__description {
+  font-family: @font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .checkbox__input:checked + .checkbox__control-mark {
   background-color: @primary;
 
@@ -33,3 +41,10 @@
   border: 1px solid @primary;
 }
 
+.checkbox__input:active + .checkbox__control-mark {
+  border: 1px solid @second-primary;
+}
+
+.checkbox__input:focus + .checkbox__control-mark {
+  outline: 1px solid @second-primary;
+}

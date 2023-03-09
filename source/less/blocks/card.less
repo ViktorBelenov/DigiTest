@@ -16,6 +16,12 @@
     left: 12px;
     padding: 8px;
     padding-right: 30px;
+
+    font-family: @font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   &--sale::before {
@@ -27,6 +33,11 @@
     position: absolute;
 
     color: @white;
+    font-family: @font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
 
     top: 160px;
     left: 12px;
@@ -38,11 +49,21 @@
   background-color: @grey-background;
   object-fit: scale-down;
   margin-bottom: 12px;
+
+  @media (min-width: @tablets-width) {
+    width: 100%;
+  }
 }
 
 .card__title {
   margin: 0;
   margin-bottom: 8px;
+
+  font-family: @font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 
   color: #aaaaaa;
 }
@@ -50,6 +71,18 @@
 .card__description {
   margin: 0;
   margin-bottom: 12px;
+}
+
+.card__description-link {
+  font-family: @font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  &:hover {
+    color: #125bae;
+  }
 }
 
 .card__price-container {
@@ -63,9 +96,32 @@
   border-radius: 4px;
 
   display: inline-block;
+
+  font-family: @font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+
+  &--disabled {
+    border: 1px solid  #aaaaaa;
+    color: #aaaaaa;
+  }
+
+  &:active {
+    background-color: @primary;
+    color: @white;
+  }
 }
 
 .card__price {
+  font-family: @font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  color: #333333;
+
   &--old {
     text-decoration: line-through;
   }

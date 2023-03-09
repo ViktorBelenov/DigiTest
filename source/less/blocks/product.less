@@ -1,5 +1,10 @@
 .product__wrapper {
-  .wrapper ();
+  margin: 0 auto;
+  width: 91.5%;
+
+  @media (min-width: @tablets-width) {
+    width: 100%;
+  }
 }
 
 .product__card-container {
@@ -15,5 +20,17 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 24px;
     row-gap: 24px;
+  }
+}
+
+.product__title {
+  font-family: @font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+
+  @media (min-width: @tablets-width) {
+    display: none;
   }
 }
